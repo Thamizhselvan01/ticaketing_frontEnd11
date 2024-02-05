@@ -6,7 +6,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://backend112.onrender.com/Create Query", {  })
+      .post("https://backend112.onrender.com/register", {  })
       .then((res) => {
         console.log(res.data.Message);
         if (res.data.Message === "Success") {
