@@ -11,7 +11,7 @@ const Password = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4007/forgot-password", { email })
+      .post("https://backend112.onrender.com/forgot-password", { email })
       .then((res) => {
         console.log(res);
         if (res.data === "Success") {
